@@ -8,6 +8,9 @@
 	</Header>
 	<Component name="Letter" ConceptLink="https://schema.org/Message" CardinalityMin="1" CardinalityMax="1">
 		<Documentation>A single message from a sender to one or more organizations or people.</Documentation>
+		<Element name="project" ValueScheme="string" CardinalityMin="0" CardinalityMax="unbounded" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+			<Documentation>For internal use to assign a label to a specific project.</Documentation>
+		</Element>
 		<Component name="Identifier" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://purl.org/dc/terms/identifier" CardinalityMin="1" CardinalityMax="unbounded">
 			<Documentation>A unique identifier of the resource being described or cataloged. Usage note: The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context. The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. </Documentation>
 			<Element name="identifiertype" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
