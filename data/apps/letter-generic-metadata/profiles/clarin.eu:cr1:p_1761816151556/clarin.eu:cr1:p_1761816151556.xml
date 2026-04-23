@@ -10,36 +10,28 @@
 		<Documentation>A single message from a sender to one or more organizations or people.</Documentation>
 		<Component name="Identifier" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://purl.org/dc/terms/identifier" CardinalityMin="1" CardinalityMax="unbounded">
 			<Documentation>A unique identifier of the resource being described or cataloged. Usage note: The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context. The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. </Documentation>
-			<Element name="identifierType" CardinalityMin="1" CardinalityMax="1">
+			<Element name="identifiertype" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>What kind of identifier it is. </Documentation>
 				<ValueScheme>
 					<Vocabulary>
 						<enumeration>
-							<item ConceptLink="http://id.loc.gov/ontologies/bibframe/Local" AppInfo="">Local-identifier</item>
-							<item ConceptLink="" AppInfo="">URI</item>
-						</enumeration>
-					</Vocabulary>
-				</ValueScheme>
-			</Element>
-			<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>Add the preferred label for this identifier.</Documentation>
-			</Element>
-			<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
-			</Element>
-			<Element name="schemeAgency" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
-				<ValueScheme>
-					<Vocabulary>
-						<enumeration>
+							<item ConceptLink="" AppInfo="">CERL</item>
+							<item ConceptLink="" AppInfo="">EMLO</item>
+							<item ConceptLink="http://id.loc.gov/ontologies/bibframe/Local" AppInfo="">LocalIdentifier</item>
+							<item ConceptLink="" AppInfo="">NODEGOAT</item>
+							<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
+							<item ConceptLink="" AppInfo="">Shelfmark</item>
 							<item ConceptLink="https://viaf.org" AppInfo="Virtual International Authority File">VIAF</item>
 							<item ConceptLink="https://www.wikidata.org" AppInfo="">Wikidata</item>
-							<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
-							<item ConceptLink="" AppInfo="">EMLO</item>
-							<item ConceptLink="" AppInfo="">CERL</item>
-							<item ConceptLink="" AppInfo="">NODEGOAT</item>
 						</enumeration>
 					</Vocabulary>
 				</ValueScheme>
+			</Element>
+			<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>Add the identifier's label (e.g., the shelfmark)</Documentation>
+			</Element>
+			<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>Persistent identifier (optional): If the object has a permanent identifier (e.g., a URN, DOI, or handle), enter the full IRI here (e.g., https://resolver.staatsbibliothek-berlin.de/SBB00019E8400000003). It does not need to be resolvable. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 			</Element>
 		</Component>
 		<Component name="SourceBasicMetadata" ComponentRef="clarin.eu:cr1:c_1761816151555" CardinalityMin="1" CardinalityMax="1">
@@ -74,36 +66,28 @@
 				<Documentation>Add as many keywords as wanted, making sure they have URIs.</Documentation>
 				<Component name="Identifier" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://purl.org/dc/terms/identifier" CardinalityMin="1" CardinalityMax="unbounded">
 					<Documentation>A unique identifier of the resource being described or cataloged. Usage note: The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context. The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. </Documentation>
-					<Element name="identifierType" CardinalityMin="1" CardinalityMax="1">
+					<Element name="identifiertype" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+						<Documentation>What kind of identifier it is. </Documentation>
 						<ValueScheme>
 							<Vocabulary>
 								<enumeration>
-									<item ConceptLink="http://id.loc.gov/ontologies/bibframe/Local" AppInfo="">Local-identifier</item>
-									<item ConceptLink="" AppInfo="">URI</item>
-								</enumeration>
-							</Vocabulary>
-						</ValueScheme>
-					</Element>
-					<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-						<Documentation>Add the preferred label for this identifier.</Documentation>
-					</Element>
-					<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-						<Documentation>The complete URL if the identifier has a web locator. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
-					</Element>
-					<Element name="schemeAgency" ConceptLink="http://www.w3.org/ns/adms#schemeAgency" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-						<Documentation>The name of the external source/knowledge base used to get the identifier. </Documentation>
-						<ValueScheme>
-							<Vocabulary>
-								<enumeration>
+									<item ConceptLink="" AppInfo="">CERL</item>
+									<item ConceptLink="" AppInfo="">EMLO</item>
+									<item ConceptLink="http://id.loc.gov/ontologies/bibframe/Local" AppInfo="">LocalIdentifier</item>
+									<item ConceptLink="" AppInfo="">NODEGOAT</item>
+									<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
+									<item ConceptLink="" AppInfo="">Shelfmark</item>
 									<item ConceptLink="https://viaf.org" AppInfo="Virtual International Authority File">VIAF</item>
 									<item ConceptLink="https://www.wikidata.org" AppInfo="">Wikidata</item>
-									<item ConceptLink="https://www.openstreetmap.org/relation" AppInfo="">OpenStreetMaps</item>
-									<item ConceptLink="" AppInfo="">EMLO</item>
-									<item ConceptLink="" AppInfo="">CERL</item>
-									<item ConceptLink="" AppInfo="">NODEGOAT</item>
 								</enumeration>
 							</Vocabulary>
 						</ValueScheme>
+					</Element>
+					<Element name="identifierLabel" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+						<Documentation>Add the identifier's label (e.g., the shelfmark)</Documentation>
+					</Element>
+					<Element name="identifierUrl" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+						<Documentation>Persistent identifier (optional): If the object has a permanent identifier (e.g., a URN, DOI, or handle), enter the full IRI here (e.g., https://resolver.staatsbibliothek-berlin.de/SBB00019E8400000003). It does not need to be resolvable. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
 					</Element>
 				</Component>
 			</Component>
@@ -121,10 +105,9 @@
 					</Vocabulary>
 				</ValueScheme>
 			</Element>
-			<Component name="PersonObservation" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="https://personsincontext.org/model#PersonObservation" CardinalityMin="1" CardinalityMax="1">
-				<Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
-				<Element name="personAsText" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-					<Documentation>Write here the person observation as it is in the source (as written, transcribed, or extracted).</Documentation>
+			<Component name="NameAsObserved" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="" CardinalityMin="1" CardinalityMax="1">
+				<Element name="name" ConceptLink="https://schema.org/name" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Write here the name as observed in the source (as written, transcribed, or extracted). For persons: "This property may only be left blank if a person's name was unknown or if a person was unnamed (e.g. a child that died shortly after being born), in which cases the property pnv:nameSpecification should state "unknown" or "unnamed"."</Documentation>
 				</Element>
 				<Component name="Confidence" ComponentRef="clarin.eu:cr1:c_1761816151574" CardinalityMin="1" CardinalityMax="1">
 					<Element name="confidenceValue" ConceptLink="https://lod.academy/cer/vocab/ontology#25_Confidence_Value" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
@@ -211,10 +194,9 @@
 					</Vocabulary>
 				</ValueScheme>
 			</Element>
-			<Component name="PersonObservation" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="https://personsincontext.org/model#PersonObservation" CardinalityMin="1" CardinalityMax="1">
-				<Documentation>https://personsincontext.org/model/#PersonObservation</Documentation>
-				<Element name="personAsText" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-					<Documentation>Write here the person observation as it is in the source (as written, transcribed, or extracted).</Documentation>
+			<Component name="NameAsObserved" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="" CardinalityMin="1" CardinalityMax="1">
+				<Element name="name" ConceptLink="https://schema.org/name" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Write here the name as observed in the source (as written, transcribed, or extracted). For persons: "This property may only be left blank if a person's name was unknown or if a person was unnamed (e.g. a child that died shortly after being born), in which cases the property pnv:nameSpecification should state "unknown" or "unnamed"."</Documentation>
 				</Element>
 				<Component name="Confidence" ComponentRef="clarin.eu:cr1:c_1761816151574" CardinalityMin="1" CardinalityMax="1">
 					<Element name="confidenceValue" ConceptLink="https://lod.academy/cer/vocab/ontology#25_Confidence_Value" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
@@ -422,7 +404,7 @@
 					<Element name="confidenceScore" ValueScheme="string" CardinalityMin="0" CardinalityMax="1"/>
 				</Component>
 			</Component>
-			<Component name="DateReconstruction" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="0" CardinalityMax="1">
+			<Component name="DateNormalized" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="0" CardinalityMax="1">
 				<Documentation>Standard: https://knaw.sharepoint.com/:b:/r/sites/PRJ-DRE-Joegoslavie/Gedeelde%20documenten/General/DRE%20Database%20-%20shared%20with%20HuC/NEN-ISO%208601-2_2019%20en%20(1).pdf?csf=1&amp;web=1&amp;e=ZENSyh</Documentation>
 				<Element name="dateStart" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>Use this field to enter a specific date (if there is no date range), or the beginning of a date range . Select from the calendar. Adapt if necessary following this pattern: YYYY-MM-DD. If there are uncertainties, use these two uncertainty patterns (here with an example): PATTERN1: 2025-??-17 (use "?" to replace uncertain values, here the day is known to be the 17th, the year is 2025 but the month is unknown). PATTERN2: ~2025-~07 (use "~" to indicate approximate values, here it means that both the year and the month are approximate values). COMBINED example: ~2025-??-17.</Documentation>
@@ -497,7 +479,7 @@
 					<Element name="confidenceScore" ValueScheme="string" CardinalityMin="0" CardinalityMax="1"/>
 				</Component>
 			</Component>
-			<Component name="DateReconstruction" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="1" CardinalityMax="1">
+			<Component name="DateNormalized" ComponentRef="clarin.eu:cr1:c_1761816151565" CardinalityMin="1" CardinalityMax="1">
 				<Documentation>Standard: https://knaw.sharepoint.com/:b:/r/sites/PRJ-DRE-Joegoslavie/Gedeelde%20documenten/General/DRE%20Database%20-%20shared%20with%20HuC/NEN-ISO%208601-2_2019%20en%20(1).pdf?csf=1&amp;web=1&amp;e=ZENSyh</Documentation>
 				<Element name="dateStart" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>Use this field to enter a specific date (if there is no date range), or the beginning of a date range . Select from the calendar. Adapt if necessary following this pattern: YYYY-MM-DD. If there are uncertainties, use these two uncertainty patterns (here with an example): PATTERN1: 2025-??-17 (use "?" to replace uncertain values, here the day is known to be the 17th, the year is 2025 but the month is unknown). PATTERN2: ~2025-~07 (use "~" to indicate approximate values, here it means that both the year and the month are approximate values). COMBINED example: ~2025-??-17.</Documentation>
@@ -538,10 +520,21 @@
 				</Component>
 			</Component>
 		</Component>
-		<Component name="FullText" CardinalityMin="0" CardinalityMax="1">
-			<Documentation>Temporary component to store full text (this should be connected to EdiTem)</Documentation>
-			<Element name="letterText" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+		<Component name="Description" ConceptLink="" CardinalityMin="0" CardinalityMax="1">
+			<Element name="description" ConceptLink="http://purl.org/dc/terms/description" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>Copy/paste the text of the letter (please keep in mind that this editor only offers basic support for entering text, for advanced text curation use eDiTem).</Documentation>
+			</Element>
+		</Component>
+		<Component name="SeeAlso" ComponentRef="clarin.eu:cr1:c_1772521921738" ConceptLink="" CardinalityMin="1" CardinalityMax="1">
+			<Element name="url" ConceptLink="http://www.w3.org/2000/01/rdf-schema#seeAlso" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+			<Element name="label" ConceptLink="http://www.w3.org/2000/01/rdf-schema#label" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+			<Element name="providerSource" ConceptLink="http://purl.org/dc/terms/publisher" ValueScheme="string" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>the name of the repository or project (e.g., "correspSearch", "Kalliope", "Deutsches Textarchiv")</Documentation>
+			</Element>
+		</Component>
+		<Component name="Notes" CardinalityMin="0" CardinalityMax="1">
+			<Element name="note" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/P3_has_note" ValueScheme="string" CardinalityMin="1" CardinalityMax="unbounded" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Documentation>This property is a container for all informal descriptions about an object that have not been expressed in terms of CIDOC CRM constructs.  In particular, it captures the characterisation of the item itself, its internal structures, appearance, etc.</Documentation>
 			</Element>
 		</Component>
 	</Component>
