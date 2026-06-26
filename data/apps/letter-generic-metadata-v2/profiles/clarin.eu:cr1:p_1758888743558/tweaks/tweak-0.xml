@@ -32,7 +32,7 @@
 			</Element>
 		</Component>
 		<Component name="Identifiers">
-			<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+			<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 			<Element name="identifierType">
 				<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 				
@@ -306,7 +306,9 @@
 					</Component>
 				</Component>
 				<Component name="Relationship">
-					<Element name="to"><!--cues--></Element>
+					<Element name="to">
+						<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+					</Element>
 					<Element name="category">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -339,7 +341,9 @@
 					</Component>
 				</Component>
 				<Component name="Relationship">
-					<Element name="to"><!--cues--></Element>
+					<Element name="to">
+						<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+					</Element>
 					<Element name="category">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -378,7 +382,7 @@
 						<Element name="eventNameNormalizedString"><!--cues--></Element>
 						<Component name="EventIdentifiers">
 							<Component name="Identifiers">
-								<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+								<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 								<Element name="identifierType">
 									<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 									
@@ -450,7 +454,9 @@
 						</Component>
 					</Component>
 					<Component name="Relationship">
-						<Element name="to"><!--cues--></Element>
+						<Element name="to">
+							<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+						</Element>
 						<Element name="category">
 							<Documentation>Type of relationship.</Documentation>
 						</Element>
@@ -485,7 +491,7 @@
 				</Component>
 				<Component name="GenderTypeIdentifier">
 					<Component name="Identifiers">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							
@@ -521,7 +527,7 @@
 				</Component>
 				<Component name="OccupationIdentifier">
 					<Component name="Identifiers">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							
@@ -557,7 +563,7 @@
 				</Component>
 				<Component name="ReligionIdentifier">
 					<Component name="Identifiers">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							
@@ -607,7 +613,9 @@
 		</Component>
 		<Component name="LinkToReconstruction">
 			<Component name="Relationship">
-				<Element name="to"><!--cues--></Element>
+				<Element name="to">
+					<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+				</Element>
 				<Element name="category">
 					<Documentation>Type of relationship.</Documentation>
 				</Element>
