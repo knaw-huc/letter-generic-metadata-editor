@@ -27,12 +27,13 @@
 							<item ConceptLink="" AppInfo="">Shelfmark</item>
 							<item ConceptLink="https://viaf.org" AppInfo="Virtual International Authority File">VIAF</item>
 							<item ConceptLink="https://www.wikidata.org" AppInfo="">Wikidata</item>
+							<item ConceptLink="" AppInfo="">Other</item>
 						</enumeration>
 					</Vocabulary>
 				</ValueScheme>
 			</Element>
 			<Element name="identifierValue" ConceptLink="http://purl.org/dc/terms/identifier" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
-				<Documentation>Add the identifier's label (e.g., the shelfmark)</Documentation>
+				<Documentation>Add the identifier's label (e.g., the shelfmark, or the identifier number in another scheme). If you chose "Other" in the Identifier type, enter here in parenthesis where the identifier comes from, for example: N011111 (Nodegoat).</Documentation>
 			</Element>
 			<Element name="identifierUri" ConceptLink="https://schema.org/sameAs" ValueScheme="anyURI" CardinalityMin="0" CardinalityMax="1" cue:DisplayPriority="3" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>Persistent identifier (optional): If the object has a permanent identifier (e.g., a URN, DOI, or handle), enter the full IRI here (e.g., https://resolver.staatsbibliothek-berlin.de/SBB00019E8400000003). It does not need to be resolvable. If it is OpenStreetMaps: Enter the URI from OpenStreetMap API. You can search directly in OpenStreetMaps and paste the URI here. The URI has to have this format, for example: https://www.openstreetmap.org/relation/214885 (note the type in the middle: relation, node, way)</Documentation>
