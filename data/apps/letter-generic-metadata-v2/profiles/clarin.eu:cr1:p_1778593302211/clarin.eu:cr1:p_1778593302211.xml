@@ -98,7 +98,7 @@
 		</Component>
 		<Component name="Sending" ConceptLink="https://lod.academy/cer/vocab/ontology#13_Sending" CardinalityMin="1" CardinalityMax="1">
 			<Documentation>"This class comprises the sending process of correspondence items involving at least two persons. It has been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element. The aim of this class is to supply information concerning the sending or dispatch of a message."</Documentation>
-			<Component name="Sender" ConceptLink="https://lod.academy/cer/vocab/ontology#17_Person" CardinalityMin="0" CardinalityMax="unbounded">
+			<Component name="Sender" ConceptLink="https://lod.academy/cer/vocab/ontology#17_Person" CardinalityMin="1" CardinalityMax="unbounded">
 				<Documentation>"This property describes the Person (CER17) involved in or responsible for an Editing (Activity) (CER 15) or for a Correspondence Action (CER12), for example sender(s) or receiver(s) of a letter..."</Documentation>
 				<Component name="LabelObserved" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="" CardinalityMin="1" CardinalityMax="1">
 					<Element name="labelAsWritten" ConceptLink="https://www.w3.org/TR/rdf-schema/#ch_label" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
@@ -357,7 +357,7 @@
 		</Component>
 		<Component name="Receiving" ConceptLink="https://lod.academy/cer/vocab/ontology#14_Receiving" CardinalityMin="1" CardinalityMax="1">
 			<Documentation>"This class comprises the receiving process of correspondence items involving at least two persons. It has been adapted from the TEI standard for correspondences, specifically drawing from the correspAction element. The aim of this class is to supply information concerning the receipt of a message."</Documentation>
-			<Component name="Receiver" ConceptLink="https://lod.academy/cer/vocab/ontology#17_Person" CardinalityMin="0" CardinalityMax="unbounded">
+			<Component name="Receiver" ConceptLink="https://lod.academy/cer/vocab/ontology#17_Person" CardinalityMin="1" CardinalityMax="unbounded">
 				<Component name="LabelObserved" ComponentRef="clarin.eu:cr1:c_1758888743556" ConceptLink="" CardinalityMin="1" CardinalityMax="1">
 					<Element name="labelAsWritten" ConceptLink="https://www.w3.org/TR/rdf-schema/#ch_label" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>Write here the name as observed in the source (as written, transcribed, or extracted). If you are entering data about an entity, but there is no written name for it,  state "unknown" or "unnamed" following project internal conventions.</Documentation>
