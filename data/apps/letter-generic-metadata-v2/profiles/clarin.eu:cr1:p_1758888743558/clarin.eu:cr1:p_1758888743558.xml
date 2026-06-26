@@ -33,7 +33,7 @@
 			</Element>
 		</Component>
 		<Component name="Identifiers" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier" CardinalityMin="1" CardinalityMax="unbounded">
-			<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+			<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 			<Element name="identifierType" ConceptLink="http://purl.org/dc/terms/type" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 				<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 				<ValueScheme>
@@ -513,7 +513,9 @@
 					</Component>
 				</Component>
 				<Component name="Relationship" ComponentRef="clarin.eu:cr1:c_1761816151563" CardinalityMin="1" CardinalityMax="1">
-					<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+					<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+						<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+					</Element>
 					<Element name="category" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -564,7 +566,9 @@
 					</Component>
 				</Component>
 				<Component name="Relationship" ComponentRef="clarin.eu:cr1:c_1761816151563" CardinalityMin="1" CardinalityMax="1">
-					<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+					<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+						<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+					</Element>
 					<Element name="category" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 						<Documentation>Type of relationship.</Documentation>
 					</Element>
@@ -621,7 +625,7 @@
 						<Element name="eventNameNormalizedString" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" Multilingual="true" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
 						<Component name="EventIdentifiers" CardinalityMin="1" CardinalityMax="1">
 							<Component name="Identifiers" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier" CardinalityMin="1" CardinalityMax="1">
-								<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+								<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 								<Element name="identifierType" ConceptLink="http://purl.org/dc/terms/type" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 									<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 									<ValueScheme>
@@ -751,7 +755,9 @@
 						</Component>
 					</Component>
 					<Component name="Relationship" ComponentRef="clarin.eu:cr1:c_1761816151563" CardinalityMin="1" CardinalityMax="1">
-						<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+						<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+							<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+						</Element>
 						<Element name="category" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 							<Documentation>Type of relationship.</Documentation>
 						</Element>
@@ -804,7 +810,7 @@
 				</Component>
 				<Component name="GenderTypeIdentifier" CardinalityMin="1" CardinalityMax="unbounded">
 					<Component name="Identifiers" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier" CardinalityMin="1" CardinalityMax="1">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType" ConceptLink="http://purl.org/dc/terms/type" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							<ValueScheme>
@@ -871,7 +877,7 @@
 				</Component>
 				<Component name="OccupationIdentifier" CardinalityMin="1" CardinalityMax="unbounded">
 					<Component name="Identifiers" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier" CardinalityMin="1" CardinalityMax="1">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType" ConceptLink="http://purl.org/dc/terms/type" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							<ValueScheme>
@@ -938,7 +944,7 @@
 				</Component>
 				<Component name="ReligionIdentifier" CardinalityMin="1" CardinalityMax="unbounded">
 					<Component name="Identifiers" ComponentRef="clarin.eu:cr1:c_1761816151559" ConceptLink="http://www.cidoc-crm.org/cidoc-crm/E42_Identifier" CardinalityMin="1" CardinalityMax="1">
-						<Documentation>-&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier</Documentation>
+						<Documentation>Internal note: for Letters (profile v2), the URI should be mapped to: https://lod.academy/cer/vocab/ontology#21_Identifier. CIDOC path: -&gt;P1-&gt;E42[1_1]-&gt;P190-&gt;rdf:Literal. </Documentation>
 						<Element name="identifierType" ConceptLink="http://purl.org/dc/terms/type" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 							<Documentation>The type/scheme of identifier (e.g., "Wikidata QID", "VIAF", "project local"</Documentation>
 							<ValueScheme>
@@ -1028,7 +1034,9 @@
 		</Component>
 		<Component name="LinkToReconstruction" ComponentRef="clarin.eu:cr1:c_1761816151566" CardinalityMin="1" CardinalityMax="1">
 			<Component name="Relationship" ComponentRef="clarin.eu:cr1:c_1761816151563" CardinalityMin="1" CardinalityMax="1">
-				<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1"/>
+				<Element name="to" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+					<Documentation>Link to the entity in the other CMDI profile.</Documentation>
+				</Element>
 				<Element name="category" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>Type of relationship.</Documentation>
 				</Element>
