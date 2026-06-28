@@ -84,7 +84,7 @@
 				<Element name="fullName" ConceptLink="https://schema.org/name" ValueScheme="string" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="1" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<Documentation>For persons, it maps to: https://w3id.org/pnv#literalName</Documentation>
 				</Element>
-				<Element name="nameLabelPrefence" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
+				<Element name="nameLabelPreference" CardinalityMin="1" CardinalityMax="1" cue:DisplayPriority="2" xmlns:cue="http://www.clarin.eu/cmd/cues/1">
 					<ValueScheme>
 						<Vocabulary>
 							<enumeration>

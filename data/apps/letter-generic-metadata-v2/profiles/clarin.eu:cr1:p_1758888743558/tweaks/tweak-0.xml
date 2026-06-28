@@ -61,7 +61,7 @@
 				<Element name="fullName">
 					<Documentation>For persons, it maps to: https://w3id.org/pnv#literalName</Documentation>
 				</Element>
-				<Element name="nameLabelPrefence">
+				<Element name="nameLabelPreference">
 					
 				</Element>
 				<Element name="nameType">
