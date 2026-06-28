@@ -168,7 +168,7 @@
 					
 				</Element>
 				<Element name="noteDate">
-					<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+					<Documentation>Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
 				</Element>
 				<Component name="Confidence">
 					<Element name="confidenceValue">
@@ -207,7 +207,7 @@
 						
 					</Element>
 					<Element name="noteDate">
-						<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+						<Documentation>Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
 					</Element>
 					<Component name="Confidence">
 						<Element name="confidenceValue">
@@ -244,7 +244,7 @@
 						
 					</Element>
 					<Element name="noteDate">
-						<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+						<Documentation>Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
 					</Element>
 					<Component name="Confidence">
 						<Element name="confidenceValue">
@@ -281,7 +281,7 @@
 						
 					</Element>
 					<Element name="noteDate">
-						<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+						<Documentation>Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
 					</Element>
 					<Component name="Confidence">
 						<Element name="confidenceValue">
@@ -429,7 +429,7 @@
 							
 						</Element>
 						<Element name="noteDate">
-							<Documentation>:Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
+							<Documentation>Add any clarifying notes related to the dates. These notes may be for internal or external use (t.b.d.)</Documentation>
 						</Element>
 						<Component name="Confidence">
 							<Element name="confidenceValue">
